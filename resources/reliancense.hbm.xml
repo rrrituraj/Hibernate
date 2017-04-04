@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.tcs.FirstHibernate.RelianceNSE" table="reliance_nse" schema="Rituraj">
+		<id name="OPENING_DATE" column="OPENING_DATE"/>
+		<property name="OPEN" column="OPEN"/>
+		<property name="HIGH" column="HIGH"/>
+		<property name="LOW" column="LOW"/>
+		<property name="LAST" column="LAST"/>
+		<property name="CLOSE" column="CLOSE"/>
+		<property name="TOTAL_TRADE_QUANTITY" column="TOTAL_TRADE_QUANTITY"/>
+		<property name="TURNOVER_IN_LACS" column="TURNOVER_IN_LACS"/>
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.tcs.FirstHibernate.Vendor" table="vendor">
+
+		<id name="vendorID" column="vendid" />
+		<property name="vendorName" column="vendname" />
+
+		<set name="children" cascade="all">
+			<key column="vendorId" />
+			<one-to-many class="com.tcs.FirstHibernate.Customer" />
+
+		</set>
+
+	</class>
+</hibernate-mapping>
